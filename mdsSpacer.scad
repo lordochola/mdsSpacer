@@ -1,3 +1,12 @@
+//===================================================================================
+// Parametric PCB Standoff Spacer OpenSCAD script
+//
+// Copyright (c) 2016 Mark David Seminatore
+//
+// Refer to included LICENSE.txt for usage rights and restrictions
+//===================================================================================
+//
+
 /* [Build Plate] */
 /*
 use <utils/build_plate.scad>
@@ -52,7 +61,7 @@ for (row = [1 : rows]) {
 
         if (count <= spacer_count) {
             translate([(col - 1) * separation, -(row - 1) * separation, 0])
-                spacer(spacer_height, spacer_diameter, screw_size);
+                mdsSpacer(spacer_height, spacer_diameter, screw_size);
         }
     }
 }
@@ -61,7 +70,7 @@ for (row = [1 : rows]) {
 //
 //
 //
-module spacer(height, dia, hole) {
+module mdsSpacer(height, dia, hole) {
     linear_extrude(height = height)
         difference() {
             circle(d = dia);
