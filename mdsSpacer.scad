@@ -1,7 +1,7 @@
 //===================================================================================
 // Parametric PCB Standoff Spacer OpenSCAD script
 //
-// Copyright (c) 2016 Mark David Seminatore
+// Copyright (c) 2016 Mark Seminatore
 //
 // Refer to included LICENSE.txt for usage rights and restrictions
 //===================================================================================
